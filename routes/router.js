@@ -24,7 +24,7 @@ initialize(passport, async (username) => {
 
 router.use(flash());
 router.use(session({
-  secret: process.env.SESSION_SECRET,
+  secret: 'helloworld',
   resave: false,
   saveUninitialized: false,
 }));
@@ -47,18 +47,6 @@ router.post('/login', passport.authenticate('local', {
 }))
 
 
-// router.post('/login', async (req, res) => {
-//   try{
-//     const hashed = await bcrypt.hash(req.body.password, 10);
-//     console.log(hashed)
-//     const db = await mongo.getUserDb();
-//     db.insertOne({ username:req.body.username, password: hashed });
-//
-//   } catch(err) {
-//     console.log(err);
-//   }
-//   res.render('login.ejs')
-// })
 
 function checkAuthentication(req,res,next){
   if(req.isAuthenticated()) {
