@@ -1,0 +1,33 @@
+.flexCenter{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.fullHeight{
+  height: 100% !important;
+}
+
+.loginmodal{
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem 4rem;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+}
+
+.loginmodal img{
+  margin-top: -5rem;
+}
+
+.loginBg{
+  z-index: 0;
+  background-image: url('../space.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+}
