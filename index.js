@@ -3,9 +3,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 const router = require('./routes/router');
-const passport = require('passport')
-const initPassport = require('./passport.config')
 
+
+app.set('view-engine', 'ejs')
 app.use(bodyParser.json());
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))

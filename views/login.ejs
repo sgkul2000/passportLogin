@@ -17,6 +17,12 @@
           <label for="passwordInput">Password</label>
           <input name="password" type="password" class="form-control" id="passwordInput" placeholder="Enter Password...">
         </div>
+        <div class="flash">
+          <% if (messages.error) { %>
+            <%= messages.error %>
+          <% } %>
+
+        </div>
         <button type="submit" class="btn btn-outline-success">Submit</button>
       </form>
     </div>

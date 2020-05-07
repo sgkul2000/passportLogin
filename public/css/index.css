@@ -1,0 +1,63 @@
+.waveHeight{
+  transform: rotate(180deg);
+  z-index: -100;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100% !important;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../wave.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.rot180{
+  transform: rotate(180deg);
+}
+
+.flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fontRed{
+  font-size: 3rem;
+}
+.flexDirCol{
+  flex-direction: column;
+}
+.usernameBanner{
+  width: 100%;
+}
+.mainContent{
+  z-index: 100;
+  width: 100%;
+
+  position: absolute;
+  top: calc(64px + 50vh);
+  left: 0;
+}
+.Card{
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+  margin: 0.3rem 0;
+
+}
+.cardHeader{
+  font-weight: 600;
+
+}
+.cardSubHeader,.cardContent{
+  font-size: 0.7rem;
+}
+.cardSubHeader{
+  padding: 0.4rem 0;
+  font-weight: 600;
+}
+.cardContent{
+  padding:0.2rem 0;
+}
